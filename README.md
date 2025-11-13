@@ -21,6 +21,7 @@ The system includes **JWT authentication**, **MongoDB cloud database**, and a **
 ---
 
 ## ⭐ Features
+
 ### 🔐 Authentication
 - User Signup / Login  
 - JWT-based secure authentication  
@@ -54,8 +55,87 @@ The system includes **JWT authentication**, **MongoDB cloud database**, and a **
 **Backend:** Node.js, Express.js  
 **Database:** MongoDB Atlas  
 **Authentication:** JWT + bcrypt  
-**Deploy:** Vercel (frontend), Render (backend)
+**Deployment:** Vercel (frontend), Render (backend)
 
 ---
 
 ## 📁 Folder Structure
+
+```
+jobquest/
+│── client/        # React frontend
+│── server/        # Node.js backend
+│── README.md
+│── .gitignore
+```
+
+---
+
+## 📦 Installation (Local Development)
+
+### Clone the repository
+```
+git clone https://github.com/gauravchaudhary724/jobquest.git
+cd jobquest
+```
+
+### Install backend
+```
+cd server
+npm install
+npm start
+```
+
+### Install frontend
+```
+cd ../client
+npm install
+npm start
+```
+
+---
+
+## 🛠️ Environment Variables
+
+Create a **.env** file inside the `server` folder:
+
+```
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+---
+
+## 🗂️ API Endpoints
+
+### Auth  
+```
+POST /api/auth/register
+POST /api/auth/login
+```
+
+### Jobs  
+```
+POST /api/jobs
+GET /api/jobs
+DELETE /api/jobs/:id
+```
+
+### Tasks  
+```
+POST /api/tasks
+GET /api/tasks
+PUT /api/tasks/:id
+DELETE /api/tasks/:id
+```
+
+---
+
+## 🚀 Deployment
+
+### Frontend (Vercel)
+https://jobquest-cyan.vercel.app
+
+### Backend (Render)
+https://jobquest-backend-umvj.onrender.com
