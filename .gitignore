@@ -1,0 +1,14 @@
+# Root ignore
+node_modules/
+.env
+.env.local
+.env.*.local
+*.log
+
+# Client ignore
+client/node_modules/
+client/build/
+
+# Server ignore
+server/node_modules/
+server/.env

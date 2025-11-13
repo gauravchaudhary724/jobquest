@@ -1,18 +1,17 @@
 const express = require("express");
 require("dotenv").config();
 const connectDB = require("./config/db");
-const app = express();
 const cors = require("cors");
+const app = express();
+
 
 connectDB();
 
 app.use(cors());
 app.use(express.json());
+
 app.use("/api/jobs", require("./routes/jobs"));
-
-
 app.use("/api/tasks", require("./routes/tasks"));
-
 app.use("/api/auth", require("./routes/auth"));
 
 app.get("/", (req, res) => {
