@@ -139,3 +139,19 @@ https://jobquest-cyan.vercel.app
 
 ### Backend (Render)
 https://jobquest-backend-umvj.onrender.com
+---
+
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login](./screenshots/login.png)
+
+### 📝 Signup Page
+![Signup](./screenshots/Signup.png)
+
+### 📊 Dashboard
+![Dashboard](./screenshots/Dashboard.png)
+
+### ➕ Add Job Page
+![Add Job](./screenshots/AddJobs.png)
+
